@@ -1,0 +1,11 @@
+<h2>Lista de Vendas</h2>
+<ul class="venda-list">
+  <li *ngFor="let venda of vendas" class="venda-item">
+    <div class="venda-info">
+      <span class="venda-cliente">{{ venda.cliente }}</span>
+      <span class="venda-quantidade">comprou {{ venda.quantidade }} de</span>
+      <span class="venda-produto">{{ venda.produto.nome }}</span>
+      <span class="venda-preco">{{ venda.precoTotal | currency }}</span>
+    </div>
+  </li>
+</ul>

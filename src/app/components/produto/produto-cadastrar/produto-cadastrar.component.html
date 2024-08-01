@@ -1,0 +1,19 @@
+<main>  
+    <div class="form-container">
+      <form (ngSubmit)="salvarProduto()">
+        <h2>Adicionar Produto</h2>
+  
+        <label for="nome">Nome:</label>
+        <input id="nome" [(ngModel)]="novoProduto.nome" name="nome" required>
+      
+        <label for="preco">Preço:</label>
+        <input id="preco" type="number" [(ngModel)]="novoProduto.preco" name="preco" required>
+      
+        <label for="quantidadeEstoque">Quantidade em Estoque:</label>
+        <input id="quantidadeEstoque" type="number" [(ngModel)]="novoProduto.quantidadeEstoque" name="quantidadeEstoque" required>
+      
+        <button type="submit">Salvar</button>
+      </form>
+    </div>
+  </main>
+  
