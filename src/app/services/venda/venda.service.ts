@@ -3,14 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 export interface VendaRequest {
-  produtoId: number;
+  idProduto: number;
   cliente: string;
   quantidade: number;
 }
 
 export interface VendaResponse {
   id: number;
-  produto: { id: number; nome: string; preco: number }; 
+  produto: { id: number; nome: string; preco: number;}; 
   cliente: string;
   quantidade: number;
   precoTotal: number;

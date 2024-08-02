@@ -1,8 +1,8 @@
 <main>
     <form (ngSubmit)="salvarVenda()" #vendaForm="ngForm">
-        <div>
+        <div>    
           <label for="produtoId">Produto ID:</label>
-          <input type="number" id="produtoId" [(ngModel)]="novaVenda.produtoId" name="produtoId" required>
+          <input type="number" id="produtoId" [(ngModel)]="novaVenda.idProduto" name="produtoId" required>
         </div>
         <div>
           <label for="cliente">Cliente:</label>
